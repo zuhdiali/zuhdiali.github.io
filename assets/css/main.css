@@ -159,15 +159,15 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #1b1b1b;
-  --contrast-color: #444444;
+  /* --background-color: #1b1b1b;
+  --contrast-color: #444444; */
   color: var(--default-color);
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   padding: 0 15px;
-  width: 300px;
+  width: 170px;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
@@ -208,7 +208,7 @@ h6 {
 
   .header~main,
   .header~#footer {
-    margin-left: 330px;
+    margin-left: 170px;
   }
 }
 

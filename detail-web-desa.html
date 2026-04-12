@@ -48,21 +48,35 @@
   </head>
 
   <body class="portfolio-details-page">
-    <!-- Language Switcher -->
-    <button
-      onclick="toggleLanguage()"
-      id="langBtn"
-      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
-      style="top: 60px; right: 20px; z-index: 1050"
-    ></button>
+    <header
+      id="header"
+      class="header d-flex flex-column justify-content-center"
+    >
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <!-- Theme Switcher -->
-    <button
-      onclick="toggleTheme()"
-      id="themeBtn"
-      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
-      style="top: 120px; right: 20px; z-index: 1050"
-    ></button>
+      <div class="header-container d-flex flex-column align-items-start">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <!-- Theme Switcher -->
+              <button
+                onclick="toggleTheme()"
+                id="themeBtn"
+                class="btn btn-sm btn-private btn-outline mb-2"
+              ></button>
+            </li>
+            <li>
+              <!-- Language Switcher -->
+              <button
+                onclick="toggleLanguage()"
+                id="langBtn"
+                class="btn btn-sm btn-private btn-outline"
+              ></button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main class="main">
       <!-- Page Title -->
