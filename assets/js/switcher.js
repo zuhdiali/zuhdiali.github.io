@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function setLanguage(lang) {
-  if (!window.translations || !window.translations[lang]) {
+  if (!translations || !translations[lang]) {
     console.warn(`Translations for language '${lang}' not found.`);
     return;
   }
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
-    element.textContent = window.translations[lang][key] || element.textContent;
-    // if (window.translations[lang] && window.translations[lang][key]) {
-    //   element.textContent = window.translations[lang][key];
+    element.textContent = translations[lang][key] || element.textContent;
+    // if (translations[lang] && translations[lang][key]) {
+    //   element.textContent = translations[lang][key];
     // }
   });
 
