@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portfolio Details - KARIB</title>
+    <title data-i18n="title">Portfolio Details - KARIB</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -48,17 +48,34 @@
   </head>
 
   <body class="portfolio-details-page">
+    <!-- Language Switcher -->
+    <button
+      onclick="toggleLanguage()"
+      id="langBtn"
+      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
+      style="top: 60px; right: 20px; z-index: 1050"
+    ></button>
+
+    <!-- Theme Switcher -->
+    <button
+      onclick="toggleTheme()"
+      id="themeBtn"
+      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
+      style="top: 120px; right: 20px; z-index: 1050"
+    ></button>
     <main class="main">
       <!-- Page Title -->
-      <div class="page-title dark-background">
+      <div class="page-title">
         <div
           class="container d-lg-flex justify-content-between align-items-center"
         >
           <h1 class="mb-2 mb-lg-0">KARIB</h1>
           <nav class="breadcrumbs">
             <ol>
-              <li><a href="index.html">Home</a></li>
-              <li class="current">Portfolio Details</li>
+              <li><a href="index.html" data-i18n="home">Home</a></li>
+              <li class="current" data-i18n="portfolio_details">
+                Portfolio Details
+              </li>
             </ol>
           </nav>
         </div>
@@ -196,12 +213,35 @@
                 data-aos="fade-left"
                 data-aos-delay="200"
               >
-                <h3>Project Information</h3>
+                <h3 data-i18n="project_information">Project Information</h3>
                 <ul>
-                  <li><strong>Category</strong>: Web Development</li>
-                  <li><strong>Client</strong>: BPS Wonosobo</li>
-                  <li><strong>Project date</strong>: 2024</li>
-                  <li><strong>Project URL</strong>: Under maintenance</li>
+                  <li>
+                    <strong data-i18n="category">Category</strong>:
+                    <span data-i18n="web_development">Web Development</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="client">Client</strong>: BPS Wonosobo
+                  </li>
+                  <li>
+                    <strong data-i18n="project_date">Project date</strong>: 2024
+                  </li>
+                  <li>
+                    <strong data-i18n="project_url">Project URL</strong>:
+                    <a
+                      href="https://inovasi1101.com/karib"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span data-i18n="url_simeulue"
+                        >Under maintenance</span
+                      ></a
+                    >,
+                    <a
+                      href="https://bps3307.me/karib"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span data-i18n="url_wsb">Under maintenance</span></a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -212,8 +252,8 @@
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <h2>Project Overview</h2>
-                <p>
+                <h2 data-i18n="project_overview">Project Overview</h2>
+                <p data-i18n="karib_overview">
                   KARIB is a specialized web application designed to uphold and
                   elevate workplace standards regarding Neatness, Aesthetics,
                   and Cleanliness (Kerapian, Keindahan, Kebersihan). By
@@ -221,7 +261,7 @@
                   culture of discipline, creating a comfortable and professional
                   environment for both employees and visitors.
                 </p>
-                <p>
+                <p data-i18n="karib_assessment">
                   The platform facilitates weekly assessments conducted by a
                   designated evaluation team. Beyond simple data entry, KARIB
                   serves as an analytical tool that automatically aggregates
@@ -230,7 +270,7 @@
                 </p>
 
                 <div class="features mt-4">
-                  <h3>Key Features</h3>
+                  <h3 data-i18n="key_features">Key Features</h3>
                   <div class="row gy-3">
                     <div class="col-md-4">
                       <div
@@ -239,8 +279,10 @@
                         data-aos-delay="400"
                       >
                         <i class="bi bi-clipboard-check-fill"></i>
-                        <h4>Granular Performance Reporting</h4>
-                        <p>
+                        <h4 data-i18n="granular_reporting">
+                          Granular Performance Reporting
+                        </h4>
+                        <p data-i18n="granular_reporting_description">
                           Automatically generates score recaps and rankings on a
                           weekly, monthly, and quarterly basis to monitor
                           progress effectively.
@@ -255,8 +297,10 @@
                         data-aos-delay="500"
                       >
                         <i class="bi bi-gear"></i>
-                        <h4>Role-Based Access Control (RBAC)</h4>
-                        <p>
+                        <h4 data-i18n="rbac">
+                          Role-Based Access Control (RBAC)
+                        </h4>
+                        <p data-i18n="rbac_description">
                           Distinct access levels for 'Evaluators' (to input
                           scores) and 'Admins' (to manage settings and view full
                           reports), ensuring data integrity.
@@ -271,8 +315,12 @@
                         data-aos-delay="600"
                       >
                         <i class="bi bi-people"></i>
-                        <h4>Comprehensive User Management</h4>
-                        <p>
+                        <h4 data-i18n="comprehensive_user_management">
+                          Comprehensive User Management
+                        </h4>
+                        <p
+                          data-i18n="comprehensive_user_management_description"
+                        >
                           A dedicated module for administrators to manage
                           employee data and system access
                         </p>
@@ -284,7 +332,7 @@
             </div>
 
             <div class="col-lg-12">
-              <h4>Technologies Used</h4>
+              <h4 data-i18n="technologies_used">Technologies Used</h4>
               <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row">
                   <div class="col">
@@ -368,8 +416,9 @@
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>.
-          Modified by Zuhdi Ali Hisyam.
+          <span data-i18n="designed_by">Designed by</span>
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>.
+          <span data-i18n="modified_by">Modified by</span> Zuhdi Ali Hisyam.
         </div>
       </div>
     </footer>
@@ -399,5 +448,74 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Translation Data -->
+    <script>
+      const translations = {
+        en: {
+          title: "Portfolio Details - KARIB",
+          home: "Home",
+          portfolio_details: "Portfolio Details",
+          project_information: "Project Information",
+          category: "Category",
+          web_development: "Web Development",
+          client: "Client",
+          project_date: "Project date",
+          project_url: "Project URL",
+          url_simeulue: "inovasi1101.com/karib",
+          url_wsb: "bps3307.me/karib",
+          project_overview: "Project Overview",
+          karib_overview:
+            "KARIB is a specialized web application designed to uphold and elevate workplace standards regarding Neatness, Aesthetics, and Cleanliness (Kerapian, Keindahan, Kebersihan). By digitizing the evaluation process, the system aims to foster a culture of discipline, creating a comfortable and professional environment for both employees and visitors.",
+          karib_assessment:
+            "The platform facilitates weekly assessments conducted by a designated evaluation team. Beyond simple data entry, KARIB serves as an analytical tool that automatically aggregates scores to identify the highest and lowest-performing employees.",
+          key_features: "Key Features",
+          granular_reporting: "Granular Performance Reporting",
+          granular_reporting_description:
+            "Automatically generates score recaps and rankings on a weekly, monthly, and quarterly basis to monitor progress effectively.",
+          rbac: "Role-Based Access Control (RBAC)",
+          rbac_description:
+            "Distinct access levels for 'Evaluators' (to input scores) and 'Admins' (to manage settings and view full reports), ensuring data integrity.",
+          comprehensive_user_management: "Comprehensive User Management",
+          comprehensive_user_management_description:
+            "A dedicated module for administrators to manage employee data and system access",
+          designed_by: "Designed by",
+          modified_by: "Modified by",
+        },
+        id: {
+          title: "Detail Portofolio - KARIB",
+          home: "Beranda",
+          portfolio_details: "Detail Portofolio",
+          project_information: "Informasi Proyek",
+          category: "Kategori",
+          web_development: "Pengembangan Web",
+          client: "Klien",
+          project_date: "Tanggal Proyek",
+          project_url: "URL Proyek",
+          url_simeulue: "inovasi1101.com/karib",
+          url_wsb: "bps3307.me/karib",
+          project_overview: "Gambaran Proyek",
+          karib_overview:
+            "KARIB adalah aplikasi web khusus yang dirancang untuk menjaga dan meningkatkan standar lingkungan kerja dalam hal Kerapian, Keindahan, dan Kebersihan. Dengan mendigitalisasi proses evaluasi, sistem ini bertujuan untuk membangun budaya kedisiplinan yang menciptakan lingkungan kerja yang nyaman dan profesional bagi karyawan maupun tamu.",
+          karib_assessment:
+            "Platform ini memfasilitasi penilaian mingguan yang dilakukan oleh tim evaluasi yang telah ditunjuk. Lebih dari sekadar pencatatan data, KARIB berfungsi sebagai alat analitik yang secara otomatis merekap skor untuk mengidentifikasi karyawan dengan performa terbaik maupun yang perlu peningkatan.",
+          key_features: "Fitur Utama",
+          granular_reporting: "Pelaporan Kinerja yang Terperinci",
+          granular_reporting_description:
+            "Secara otomatis menghasilkan rekap skor dan peringkat secara mingguan, bulanan, dan triwulanan untuk memantau perkembangan secara efektif.",
+          rbac: "Kontrol Akses Berbasis Peran (RBAC)",
+          rbac_description:
+            "Tingkat akses yang berbeda untuk 'Evaluator' (untuk memasukkan skor) dan 'Admin' (untuk mengelola pengaturan dan melihat laporan lengkap), guna memastikan integritas data.",
+          comprehensive_user_management: "Manajemen Pengguna yang Komprehensif",
+          comprehensive_user_management_description:
+            "Modul khusus bagi administrator untuk mengelola data karyawan dan hak akses sistem.",
+          designed_by: "Dirancang oleh",
+          modified_by: "Dimodifikasi oleh",
+        },
+      };
+    </script>
+
+    <!-- Theme and Language Switcher -->
+    <script src="assets/js/switcher.js"></script>
   </body>
 </html>

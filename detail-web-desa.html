@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portfolio Details - SnapFolio Bootstrap Template</title>
+    <title data-i18n="title">Portfolio Details - Villange Website</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -48,17 +48,37 @@
   </head>
 
   <body class="portfolio-details-page">
+    <!-- Language Switcher -->
+    <button
+      onclick="toggleLanguage()"
+      id="langBtn"
+      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
+      style="top: 60px; right: 20px; z-index: 1050"
+    ></button>
+
+    <!-- Theme Switcher -->
+    <button
+      onclick="toggleTheme()"
+      id="themeBtn"
+      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
+      style="top: 120px; right: 20px; z-index: 1050"
+    ></button>
+
     <main class="main">
       <!-- Page Title -->
-      <div class="page-title dark-background">
+      <div class="page-title">
         <div
           class="container d-lg-flex justify-content-between align-items-center"
         >
-          <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+          <h1 class="mb-2 mb-lg-0" data-i18n="portfolio_details">
+            Portfolio Details
+          </h1>
           <nav class="breadcrumbs">
             <ol>
-              <li><a href="index.html">Home</a></li>
-              <li class="current">Portfolio Details</li>
+              <li><a href="index.html" data-i18n="home">Home</a></li>
+              <li class="current" data-i18n="portfolio_details">
+                Portfolio Details
+              </li>
             </ol>
           </nav>
         </div>
@@ -161,12 +181,27 @@
                 data-aos="fade-left"
                 data-aos-delay="200"
               >
-                <h3>Project Information</h3>
+                <h3 data-i18n="project_information">Project Information</h3>
                 <ul>
-                  <li><strong>Category</strong>: Web Development</li>
-                  <li><strong>Client</strong>: BPS Wonosobo</li>
-                  <li><strong>Project date</strong>: 2024</li>
-                  <li><strong>Project URL</strong>: Under maintenance</li>
+                  <li>
+                    <strong data-i18n="category">Category</strong>:
+                    <span data-i18n="web_development">Web Development</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="client">Client</strong>: BPS Wonosobo
+                  </li>
+                  <li>
+                    <strong data-i18n="project_date">Project date</strong>: 2024
+                  </li>
+                  <li>
+                    <strong data-i18n="project_url">Project URL</strong>:
+                    <a
+                      href="http://bps3307.me/desa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span data-i18n="url">Under maintenance</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -177,8 +212,8 @@
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <h2>Project Overview</h2>
-                <p>
+                <h2 data-i18n="project_overview">Project Overview</h2>
+                <p data-i18n="project_overview_description">
                   This web application is designed to serve as a comprehensive
                   digital window for the village, bridging the gap between local
                   potential and the wider public. It acts as a central hub for
@@ -187,7 +222,9 @@
                 </p>
 
                 <div class="features mt-4">
-                  <h3>Key Features & Modules</h3>
+                  <h3 data-i18n="key_features_and_modules">
+                    Key Features & Modules
+                  </h3>
                   <div class="row gy-3">
                     <div class="col-md-6">
                       <div
@@ -196,8 +233,8 @@
                         data-aos-delay="400"
                       >
                         <i class="bi bi-house-check-fill"></i>
-                        <h4>Edu-Tourism Management</h4>
-                        <p>
+                        <h4 data-i18n="edutourism">Edu-Tourism Management</h4>
+                        <p data-i18n="edutourism_description">
                           A dedicated log of past study visits and field trips,
                           complete with a public calendar of upcoming schedules
                           to attract potential visitors.
@@ -212,8 +249,10 @@
                         data-aos-delay="500"
                       >
                         <i class="bi bi-shop"></i>
-                        <h4>Local Marketplace Catalog</h4>
-                        <p>
+                        <h4 data-i18n="local_marketplace">
+                          Local Marketplace Catalog
+                        </h4>
+                        <p data-i18n="local_marketplace_description">
                           A digital showcase for the village’s signature
                           products (produk unggulan). It displays detailed items
                           with real-time pricing and stock availability,
@@ -229,8 +268,10 @@
                         data-aos-delay="600"
                       >
                         <i class="bi bi-gear"></i>
-                        <h4>Data Synchronization</h4>
-                        <p>
+                        <h4 data-i18n="data_synchronization">
+                          Data Synchronization
+                        </h4>
+                        <p data-i18n="data_synchronization_description">
                           The system is integrated with Diskominfo, ensuring
                           that all statistical data regarding the village is
                           synchronized and accurate.
@@ -245,8 +286,8 @@
                         data-aos-delay="700"
                       >
                         <i class="bi bi-check-circle-fill"></i>
-                        <h4>News & Updates</h4>
-                        <p>
+                        <h4 data-i18n="newsupdates">News & Updates</h4>
+                        <p data-i18n="newsupdates_description">
                           A dynamic portal to keep the community and the public
                           informed about the latest village developments.
                         </p>
@@ -255,7 +296,7 @@
                   </div>
                 </div>
 
-                <p class="mt-2">
+                <p class="mt-2" data-i18n="backend_and_administration">
                   Backend & Administration: To ensure sustainability, the
                   website is equipped with a robust Admin Dashboard. This
                   feature empowers village officials to perform full CRUD
@@ -267,7 +308,7 @@
             </div>
 
             <div class="col-lg-12">
-              <h4>Technologies Used</h4>
+              <h4 data-i18n="technologies_used">Technologies Used</h4>
               <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row">
                   <div class="col">
@@ -351,8 +392,9 @@
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>.
-          Modified by Zuhdi Ali Hisyam.
+          <span data-i18n="designed_by">Designed by</span>
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>.
+          <span data-i18n="modified_by">Modified by</span> Zuhdi Ali Hisyam.
         </div>
       </div>
     </footer>
@@ -382,5 +424,80 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Translation Data -->
+    <script>
+      const translations = {
+        id: {
+          title: "Detail Portofolio - Website Desa",
+          home: "Beranda",
+          portfolio_details: "Detail Portofolio",
+          project_information: "Informasi Proyek",
+          category: "Kategori",
+          web_development: "Pengembangan Web",
+          client: "Klien",
+          project_date: "Tanggal Proyek",
+          project_url: "URL Proyek",
+          url: "https://bps3307.me/desa",
+          project_overview: "Gambaran Proyek",
+          project_overview_description:
+            "Aplikasi web ini dirancang untuk menjadi jendela digital yang komprehensif bagi desa, menjembatani potensi lokal dengan masyarakat luas. Platform ini berfungsi sebagai pusat promosi edu-wisata, pendukung UMKM lokal, dan penyampai berita resmi desa.",
+          key_features_and_modules: "Fitur Utama & Modul",
+          edutourism: "Manajemen Edu-Wisata",
+          edutourism_description:
+            "Pencatatan kunjungan studi dan karyawisata yang telah berlangsung, dilengkapi dengan kalender jadwal mendatang yang dapat diakses publik untuk menarik calon pengunjung.",
+          local_marketplace: "Katalog Produk Lokal",
+          local_marketplace_description:
+            "Etalase digital untuk produk unggulan desa yang menampilkan informasi produk secara lengkap beserta harga dan ketersediaan stok secara real-time, guna meningkatkan visibilitas ekonomi lokal.",
+          data_synchronization: "Sinkronisasi Data",
+          data_synchronization_description:
+            "Sistem ini terintegrasi dengan Diskominfo, memastikan seluruh data statistik desa tersinkronisasi dan selalu akurat.",
+          newsupdates: "Berita & Pembaruan",
+          newsupdates_description:
+            "Portal dinamis untuk menjaga masyarakat dan publik tetap terinformasi mengenai perkembangan terkini di desa.",
+          backend_and_administration:
+            "Backend & Administrasi: Untuk memastikan keberlanjutan, website dilengkapi dengan Dasbor Admin yang andal. Fitur ini memungkinkan perangkat desa untuk melakukan operasi CRUD (Buat, Baca, Perbarui, Hapus) secara penuh pada seluruh konten website — mulai dari pengelolaan inventaris produk hingga penerbitan berita — tanpa memerlukan keahlian teknis tingkat lanjut.",
+          technologies_used: "Teknologi yang Digunakan",
+          designed_by: "Dirancang oleh",
+          modified_by: "Dimodifikasi oleh",
+        },
+        en: {
+          title: "Portfolio Details - Village Website",
+          home: "Home",
+          portfolio_details: "Portfolio Details",
+          project_information: "Project Information",
+          category: "Category",
+          web_development: "Web Development",
+          client: "Client",
+          project_date: "Project Date",
+          project_url: "Project URL",
+          url: "https://bps3307.me/desa",
+          project_overview: "Project Overview",
+          project_overview_description:
+            "This web application is designed to serve as a comprehensive digital window for the village, bridging the gap between local potential and the wider public. It acts as a central hub for promoting edu-tourism, supporting local MSMEs (UMKM), and delivering official news.",
+          key_features_and_modules: "Key Features & Modules",
+          edutourism: "Edu-Tourism Management",
+          edutourism_description:
+            "A dedicated log of past study visits and field trips, complete with a public calendar of upcoming schedules to attract potential visitors.",
+          local_marketplace: "Local Marketplace Catalog",
+          local_marketplace_description:
+            "A digital showcase for the village’s signature products (produk unggulan). It displays detailed items with real-time pricing and stock availability, boosting local economic visibility.",
+          data_synchronization: "Data Synchronization",
+          data_synchronization_description:
+            "The system is integrated with Diskominfo, ensuring that all statistical data regarding the village is synchronized and accurate.",
+          newsupdates: "News & Updates",
+          newsupdates_description:
+            "A dynamic portal to keep the community and the public informed about the latest village developments.",
+          backend_and_administration:
+            "Backend & Administration: To ensure sustainability, the website is equipped with a robust Admin Dashboard. This feature empowers village officials to perform full CRUD (Create, Read, Update, Delete) operations on all website content—from managing product inventories to publishing news—without requiring advanced technical skills.",
+          technologies_used: "Technologies Used",
+          designed_by: "Designed by",
+          modified_by: "Modified by",
+        },
+      };
+    </script>
+
+    <!-- Theme and Language Switcher -->
+    <script src="assets/js/switcher.js"></script>
   </body>
 </html>

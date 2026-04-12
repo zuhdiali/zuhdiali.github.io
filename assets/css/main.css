@@ -37,6 +37,22 @@
   --nav-dropdown-hover-color: #ececec; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
+/* Light Theme */
+[data-theme="light"] {
+  --background-color: #f5f5f5;
+  --default-color: #2c2c2c;
+  --heading-color: #1f1f1f;
+  --accent-color: #4a4a39;
+  --surface-color: #ffffff;
+  --contrast-color: #dbdbdb;
+  --nav-color: rgba(70, 70, 70, 0.7);
+  --nav-hover-color: #1f1f1f;
+  --nav-mobile-background-color: #e8e8e8;
+  --nav-dropdown-background-color: #e8e8e8;
+  --nav-dropdown-color: #2c2c2c;
+  --nav-dropdown-hover-color: #1f1f1f;
+}
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
@@ -2561,7 +2577,7 @@ section,
 }
 
 .hover-putih:hover {
-  background: white;
+  background: var(--accent-color);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -2581,8 +2597,8 @@ section,
   transform: translateX(-50%);
   
   /* Styling Tampilan */
-  background-color: #333; /* Warna background hitam */
-  color: #fff; /* Warna teks putih */
+  background-color: var(--surface-color); /* Warna background hitam */
+  color: var(--default-color); /* Warna teks putih */
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 13px;
@@ -2604,7 +2620,7 @@ section,
   left: 50%;
   transform: translateX(-50%);
   border: 5px solid transparent;
-  border-top-color: #333;
+  border-top-color: var(--surface-color);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, bottom 0.3s;
@@ -2628,4 +2644,19 @@ section,
 .hover-images:hover {
   display: flex; /* Atau block */
   gap: 10px;
+}
+
+.btn-private{
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-private:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
 }

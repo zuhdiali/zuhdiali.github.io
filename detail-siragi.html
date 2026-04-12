@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portfolio Details - SnapFolio Bootstrap Template</title>
+    <title data-i18n="portfolio_details_title">Portfolio Details</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -48,17 +48,38 @@
   </head>
 
   <body class="portfolio-details-page">
+    <!-- Language Switcher -->
+    <button
+      onclick="toggleLanguage()"
+      id="langBtn"
+      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
+      style="top: 60px; right: 20px; z-index: 1050"
+    ></button>
+
+    <!-- Theme Switcher -->
+    <button
+      onclick="toggleTheme()"
+      id="themeBtn"
+      class="btn btn-sm btn-private btn-outline me-2 position-fixed"
+      style="top: 120px; right: 20px; z-index: 1050"
+    ></button>
     <main class="main">
       <!-- Page Title -->
-      <div class="page-title dark-background">
+      <div class="page-title">
         <div
           class="container d-lg-flex justify-content-between align-items-center"
         >
-          <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+          <h1 class="mb-2 mb-lg-0" data-i18n="portfolio_details_title">
+            Portfolio Details
+          </h1>
+
+          <!-- Breadcrumbs -->
           <nav class="breadcrumbs">
             <ol>
-              <li><a href="index.html">Home</a></li>
-              <li class="current">Portfolio Details</li>
+              <li><a href="index.html" data-i18n="home">Home</a></li>
+              <li class="current" data-i18n="portfolio_details">
+                Portfolio Details
+              </li>
             </ol>
           </nav>
         </div>
@@ -227,12 +248,32 @@
                 data-aos="fade-left"
                 data-aos-delay="200"
               >
-                <h3>Project Information</h3>
+                <h3 data-i18n="project_information">Project Information</h3>
                 <ul>
-                  <li><strong>Category</strong>: Web Development</li>
-                  <li><strong>Client</strong>: BPS Simeulue</li>
-                  <li><strong>Project date</strong>: 2025-2026</li>
-                  <li><strong>Project URL</strong>: Under maintenance</li>
+                  <li>
+                    <strong data-i18n="category">Category</strong>:
+                    <span data-i18n="web_development">Web Development</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="client">Client</strong>:
+                    <span data-i18n="bps_simeulue">BPS Simeulue</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="project_date">Project date</strong>:
+                    <span data-i18n="project_date_value">2025-2026</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="project_url">Project URL</strong>:
+                    <a
+                      href="http://inovasi1101.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span data-i18n="under_maintenance"
+                        >Under maintenance</span
+                      >
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -243,8 +284,8 @@
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <h2>Project Overview</h2>
-                <p>
+                <h2 data-i18n="project_overview">Project Overview</h2>
+                <p data-i18n="siragi_overview">
                   SIRAGI is a bespoke web-based application developed for BPS
                   Simeulue (Statistics Simeulue) to modernize and digitize
                   administrative workflows. Before SIRAGI, many administrative
@@ -254,25 +295,38 @@
                   for archiving correspondence and managing statistical
                   activities, ensuring data integrity and operational speed.
                 </p>
-                <p>Key Challenges Addressed</p>
+                <p data-i18n="key_challenges">Key Challenges Addressed</p>
                 <ul>
                   <li>
-                    <strong>Inconsistent Numbering:</strong> Manual logs often
-                    resulted in duplicate or skipped outgoing letter numbers.
+                    <strong data-i18n="inconsistent_numbering"
+                      >Inconsistent Numbering</strong
+                    >:
+                    <span data-i18n="inconsistent_numbering_description"
+                      >Manual logs often resulted in duplicate or skipped
+                      outgoing letter numbers.
+                    </span>
                   </li>
                   <li>
-                    <strong>Complex Financial Tracking:</strong> Monitoring fees
-                    (honor) for hundreds of field partners manually was
-                    time-consuming and prone to miscalculation.
+                    <strong data-i18n="complex_financial_tracking"
+                      >Complex Financial Tracking</strong
+                    >:
+                    <span data-i18n="complex_financial_tracking_description">
+                      Monitoring fees (honor) for hundreds of field partners
+                      manually was time-consuming and prone to miscalculation.
+                    </span>
                   </li>
                   <li>
-                    <strong>Repetitive Documentation:</strong> Drafting Work
-                    Agreements (SPK) for each partner every month was a
-                    repetitive administrative burden.
+                    <strong data-i18n="repetitive_documentation"
+                      >Repetitive Documentation</strong
+                    >:
+                    <span data-i18n="repetitive_documentation_description">
+                      Drafting Work Agreements (SPK) for each partner every
+                      month was a repetitive administrative burden.
+                    </span>
                   </li>
                 </ul>
                 <div class="features mt-4">
-                  <h3>Core Features & Solutions</h3>
+                  <h3 data-i18n="core_features">Core Features & Solutions</h3>
                   <div class="row gy-3">
                     <div class="col-md-4">
                       <div
@@ -281,8 +335,10 @@
                         data-aos-delay="400"
                       >
                         <i class="bi bi-check-circle-fill"></i>
-                        <h4>Intelligent Digital Numbering System</h4>
-                        <p>
+                        <h4 data-i18n="intelligent_numbering">
+                          Intelligent Digital Numbering System
+                        </h4>
+                        <p data-i18n="numbering_system_description">
                           SIRAGI replaces the manual logbook with an automated
                           sequencing algorithm. The system ensures that every
                           outgoing letter receives a unique, sequential number
@@ -301,8 +357,10 @@
                         data-aos-delay="500"
                       >
                         <i class="bi bi-speedometer2"></i>
-                        <h4>Granular Financial Monitoring Dashboard</h4>
-                        <p>
+                        <h4 data-i18n="granular_financial_monitoring">
+                          Granular Financial Monitoring Dashboard
+                        </h4>
+                        <p data-i18n="financial_monitoring_description">
                           The system includes a specialized module for tracking
                           Partner Fees (Honor Mitra). Administrators can view a
                           detailed breakdown of fees allocated to each field
@@ -321,8 +379,10 @@
                         data-aos-delay="600"
                       >
                         <i class="bi bi-file-earmark-arrow-down-fill"></i>
-                        <h4>Automated Document Generation (SPK)</h4>
-                        <p>
+                        <h4 data-i18n="automated_document_generation">
+                          Automated Document Generation (SPK)
+                        </h4>
+                        <p data-i18n="document_generation_description">
                           To boost administrative efficiency, SIRAGI features a
                           one-click document generator. It automatically pulls
                           data from the activity database to generate Work
@@ -335,7 +395,7 @@
                     </div>
                   </div>
                 </div>
-                <p class="mt-2">
+                <p class="mt-2" data-i18n="system_benefits">
                   This system significantly reduces manual administrative
                   overhead and improves data integrity.
                 </p>
@@ -343,7 +403,7 @@
             </div>
 
             <div class="col-lg-12">
-              <h4>Technologies Used</h4>
+              <h4 data-i18n="technologies_used">Technologies Used</h4>
               <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row">
                   <div class="col">
@@ -427,8 +487,9 @@
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>.
-          Modified by Zuhdi Ali Hisyam.
+          <span data-i18n="designed_by">Designed by</span>
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>.
+          <span data-i18n="modified_by">Modified by</span> Zuhdi Ali Hisyam.
         </div>
       </div>
     </footer>
@@ -458,5 +519,101 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Translation Data -->
+    <script>
+      const translations = {
+        id: {
+          portfolio_details_title: "Detail Portofolio",
+          home: "Beranda",
+          portfolio_details: "Detail Portofolio",
+          project_information: "Informasi Proyek",
+          category: "Kategori",
+          web_development: "Pengembangan Web",
+          client: "Klien",
+          bps_simeulue: "BPS Simeulue",
+          project_date: "Tanggal Proyek",
+          project_date_value: "2025-2026",
+          project_url: "URL Proyek",
+          under_maintenance: "inovasi1101.com",
+          project_overview: "Gambaran Proyek",
+          siragi_overview:
+            "SIRAGI adalah aplikasi berbasis web yang dikembangkan khusus untuk BPS Simeulue guna memodernisasi dan mendigitalisasi alur kerja administratif. Sebelum SIRAGI hadir, banyak tugas administratif seperti penomoran surat, pengarsipan, dan perhitungan honor mitra masih dikerjakan secara manual, sehingga berpotensi menimbulkan kesalahan dan ketidakefisienan. Sistem ini berfungsi sebagai pusat pengelolaan arsip surat-menyurat dan kegiatan statistik, guna memastikan integritas data dan kecepatan operasional.",
+          key_challenges: "Tantangan Utama yang Diatasi",
+          inconsistent_numbering: "Penomoran yang Tidak Konsisten",
+          inconsistent_numbering_description:
+            "Pencatatan manual kerap mengakibatkan nomor surat keluar yang terduplikasi atau terlewat.",
+          complex_financial_tracking: "Pemantauan Keuangan yang Kompleks",
+          complex_financial_tracking_description:
+            "Memantau honor ratusan mitra lapangan secara manual membutuhkan waktu yang lama dan rentan terhadap kesalahan perhitungan.",
+          repetitive_documentation: "Dokumentasi yang Berulang",
+          repetitive_documentation_description:
+            "Penyusunan Surat Perjanjian Kerja (SPK) untuk setiap mitra setiap bulannya menjadi beban administratif yang berulang dan tidak efisien.",
+          core_features: "Fitur Utama & Solusi",
+          intelligent_numbering: "Sistem Penomoran Digital Cerdas",
+          numbering_system_description:
+            "SIRAGI menggantikan buku catatan manual dengan algoritma pengurutan otomatis. Sistem ini memastikan setiap surat keluar mendapatkan nomor unik dan berurutan secara real-time. Fitur ini secara efektif menghilangkan risiko nomor duplikat atau kekosongan administratif, sehingga menjamin konsistensi kronologis dalam surat-menyurat resmi.",
+          granular_financial_monitoring:
+            "Dasbor Pemantauan Keuangan yang Terperinci",
+          financial_monitoring_description:
+            "Sistem ini dilengkapi modul khusus untuk memantau Honor Mitra. Administrator dapat melihat rincian honor yang dialokasikan kepada setiap mitra lapangan, dengan filter berdasarkan bulan atau kegiatan tertentu. Visibilitas yang terperinci ini membantu pemantauan anggaran secara akurat dan memastikan transparansi dalam pencairan dana.",
+          automated_document_generation: "Pembuatan Dokumen Otomatis (SPK)",
+          document_generation_description:
+            "Untuk meningkatkan efisiensi administratif, SIRAGI dilengkapi fitur pembuatan dokumen dengan satu klik. Sistem secara otomatis mengambil data dari basis data kegiatan untuk menghasilkan Surat Perjanjian Kerja (SPK) bagi mitra lapangan. Dokumen-dokumen tersebut diekspor langsung dalam format Microsoft Word yang dapat diedit, mengubah proses pengetikan manual berjam-jam menjadi hanya dalam hitungan detik.",
+          system_benefits:
+            "Sistem ini secara signifikan mengurangi beban administratif manual dan meningkatkan integritas data.",
+          technologies_used: "Teknologi yang Digunakan",
+          designed_by: "Dirancang oleh",
+          modified_by: "Dimodifikasi oleh",
+        },
+        en: {
+          portfolio_details_title: "Portfolio Details",
+          home: "Home",
+          portfolio_details: "Portfolio Details",
+          project_information: "Project Information",
+          category: "Category",
+          web_development: "Web Development",
+          client: "Client",
+          bps_simeulue: "BPS Simeulue",
+          project_date: "Project date",
+          project_date_value: "2025-2026",
+          project_url: "Project URL",
+          under_maintenance: "inovasi1101.com",
+          project_overview: "Project Overview",
+          siragi_overview:
+            "SIRAGI is a bespoke web-based application developed for BPS Simeulue (Statistics Simeulue) to modernize and digitize administrative workflows. Before SIRAGI, many administrative tasks—such as letter numbering, archiving, and partner fee calculations—were handled manually, leading to potential human errors and inefficiencies. This system serves as a central hub for archiving correspondence and managing statistical activities, ensuring data integrity and operational speed.",
+          key_challenges: "Key Challenges Addressed",
+          inconsistent_numbering: "Inconsistent Numbering",
+          inconsistent_numbering_description:
+            "Manual logs often resulted in duplicate or skipped outgoing letter numbers.",
+          complex_financial_tracking: "Complex Financial Tracking",
+          complex_financial_tracking_description:
+            "Monitoring fees (honor) for hundreds of field partners manually was time-consuming and prone to miscalculation.",
+          repetitive_documentation: "Repetitive Documentation",
+          repetitive_documentation_description:
+            "Drafting Work Agreements (SPK) for each partner every month was a repetitive administrative burden.",
+          core_features: "Core Features & Solutions",
+          intelligent_numbering: "Intelligent Digital Numbering System",
+          numbering_system_description:
+            "SIRAGI replaces the manual logbook with an automated sequencing algorithm. The system ensures that every outgoing letter receives a unique, sequential number in real-time. This feature effectively eliminates the risk of duplicate numbers or administrative gaps, ensuring chronological consistency in official correspondence.",
+          granular_financial_monitoring:
+            "Granular Financial Monitoring Dashboard",
+          financial_monitoring_description:
+            "The system includes a specialized module for tracking Partner Fees (Honor Mitra). Administrators can view a detailed breakdown of fees allocated to each field partner, filterable by specific months or activities. This granular visibility aids in precise budget monitoring and ensures transparency in financial disbursements.",
+          automated_document_generation: "Automated Document Generation (SPK)",
+          document_generation_description:
+            "To boost administrative efficiency, SIRAGI features a one-click document generator. It automatically pulls data from the activity database to generate Work Agreements (SPK) for field partners. These documents are exported directly into editable Microsoft Word formats, reducing hours of manual typing to mere seconds.",
+
+          system_benefits:
+            "This system significantly reduces manual administrative overhead and improves data integrity.",
+          technologies_used: "Technologies Used",
+          designed_by: "Designed by",
+          modified_by: "Modified by",
+        },
+      };
+    </script>
+
+    <!-- Theme and Language Switcher -->
+    <script src="assets/js/switcher.js"></script>
   </body>
 </html>
