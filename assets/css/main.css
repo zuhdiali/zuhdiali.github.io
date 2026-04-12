@@ -164,7 +164,7 @@ h6 {
   color: var(--default-color);
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   padding: 0 15px;
   width: 170px;
@@ -208,7 +208,8 @@ h6 {
 
   .header~main,
   .header~#footer {
-    margin-left: 170px;
+    margin-right: 170px;
+    margin-left: 100px;
   }
 }
 
