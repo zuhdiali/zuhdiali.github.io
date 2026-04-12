@@ -19,7 +19,7 @@ function toggleTheme() {
 
 // Language Switcher Script
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "us"; // default
+  const savedLang = localStorage.getItem("lang") || "en"; // default
   setLanguage(savedLang);
 
   // Sesuaikan tampilan tombol
