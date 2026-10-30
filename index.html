@@ -193,7 +193,7 @@
                   </div>
 
                   <div
-                    class="social-links d-flex align-items-center justify-content-center flex-wrap"
+                    class="social-links d-flex align-items-center justify-content-center justify-content-lg-start flex-wrap"
                   >
                     <!-- <a href="#"><i class="bi bi-dribbble"></i></a> -->
                     <!-- <a href="#"><i class="bi bi-behance"></i></a> -->
@@ -368,6 +368,66 @@
                   <i class="bi bi-award me-2"></i>
                   <span data-i18n="awards">Awards</span>
                 </h3>
+                <div class="resume-item">
+                  <h4>
+                    <span data-i18n="best_employee_q3_2026"
+                      >Best Employee Award – Q3 2026</span
+                    >
+                    <button
+                      type="button"
+                      class="btn btn-private btn-sm"
+                      style="
+                        --bs-btn-padding-y: 0.25rem;
+                        --bs-btn-padding-x: 0.5rem;
+                        --bs-btn-font-size: 0.75rem;
+                      "
+                      data-bs-toggle="modal"
+                      data-bs-target="#TALAK33"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span data-i18n="show">Show</span>
+                    </button>
+                  </h4>
+                  <h5 data-i18n="awarded_berakhlak">
+                    Awarded for exemplifying the BerAKHLAK Core Values.
+                  </h5>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="TALAK33"
+                    tabindex="-1"
+                    aria-labelledby="TALAK33Label"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5 text-dark"
+                            id="TALAK33Label"
+                            data-i18n="best_employee_q3_2026"
+                          >
+                            Best Employee Award – Q3 2026
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <img
+                            src="assets/img/award/talak-3.3.jpg"
+                            alt="Award"
+                            class="award-img w-100"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <div class="resume-item">
                   <h4>
@@ -769,6 +829,9 @@
                     <li data-filter=".filter-research" data-i18n="research">
                       Research
                     </li>
+                    <li data-filter=".filter-others" data-i18n="others">
+                      Others
+                    </li>
                     <!-- <li data-filter=".filter-automotive" data-i18n="automotive">
                       Automotive
                     </li> 
@@ -778,6 +841,47 @@
                   </ul>
                 </div>
               </div>
+
+              <div class="col-lg-9">
+                <div
+                  class="row gy-4 portfolio-container isotope-container"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-others"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="assets/img/portfolio/asek/asek-2.png"
+                        class="img-fluid"
+                        alt="Portfolio Image"
+                        loading="lazy"
+                      />
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category" data-i18n="others">
+                            Others
+                          </span>
+                          <h4 class="text-white" data-i18n="asek">
+                            Asisten Perekap Kegiatan (ASEK)
+                          </h4>
+                          <div class="portfolio-links">
+                            <a
+                              href="assets/img/portfolio/asek/asek-2.png"
+                              class="glightbox"
+                              title="Asisten Perekap Kegiatan (ASEK)"
+                              ><i class="bi bi-plus-lg"></i
+                            ></a>
+                            <a href="detail-asek.html" title="More Details"
+                              ><i class="bi bi-arrow-right"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Portfolio Item -->
 
               <div class="col-lg-9">
                 <div
@@ -1179,7 +1283,10 @@
           polytechnic_statistics: "Politeknik Statistika STIS, Jakarta.",
           major_statistical_computing: "Program Studi Komputasi Statistik",
           awards: "Penghargaan",
+          best_employee_q1_2025: "Penghargaan Karyawan Terbaik – Q1 2025",
           best_employee_q3_2025: "Penghargaan Karyawan Terbaik – Q3 2025",
+          best_employee_q3_2026: "Penghargaan Karyawan Terbaik – Q3 2026",
+
           awarded_berakhlak:
             "Diberikan atas penerapan Nilai-Nilai Inti BerAKHLAK.",
           runner_up_innovation_challenge: "Juara II, Lomba Inovasi",
@@ -1197,7 +1304,9 @@
             "Jelajahi kumpulan proyek terbaru saya. Mulai dari membangun sistem administratif yang aman hingga portal informasi publik, karya-karya ini mencerminkan dedikasi saya dalam menciptakan solusi digital yang skalabel dan berdampak nyata.",
           all_projects: "Semua Proyek",
           web_development: "Pengembangan Web",
+          others: "Lainnya",
           research: "Penelitian",
+          asek: "Asisten Perekap Kegiatan (ASEK)",
           siragi_web: "Web SIRAGI",
           village_branding_web: "Web Branding Desa",
           research_project:
@@ -1260,6 +1369,8 @@
           commemorating_national_statistics_day:
             "Commemorating National Statistics Day",
           best_employee_q1_2025: "Best Employee Award – Q1 2025",
+          best_employee_q3_2025: "Best Employee Award – Q3 2025",
+          best_employee_q3_2026: "Best Employee Award – Q3 2026",
           awarded_for_exemplifying_the_berakhlak_core_values:
             "Awarded for exemplifying the BerAKHLAK Core Values.",
           show: "Show",
@@ -1271,7 +1382,9 @@
             "Explore a showcase of my recent projects. From building secure administrative systems to public information portals, these works demonstrate my dedication to crafting scalable and impactful digital solutions",
           all_projects: "All Projects",
           web_development: "Web Development",
+          others: "Others",
           research: "Research",
+          asek: "Event Recording Assistant (ASEK)",
           siragi_web: "SIRAGI Web",
           village_branding_web: "Village Branding Web",
           research_project:

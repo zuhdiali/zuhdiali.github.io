@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title data-i18n="portfolio_details_title">Portfolio Details</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+    * Template Name: SnapFolio
+    * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+    * Updated: Jul 21 2025 with Bootstrap v5.3.7
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+  </head>
+
+  <body class="portfolio-details-page">
+    <header
+      id="header"
+      class="header d-flex flex-column justify-content-center"
+    >
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="header-container d-flex flex-column align-items-start">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html#portfolio" class="nav-link scrollto active">
+                <i class="bi bi-arrow-left me-2"></i>
+                <span data-i18n="back">Back</span>
+              </a>
+            </li>
+            <li>
+              <!-- Theme Switcher -->
+              <button
+                onclick="toggleTheme()"
+                id="themeBtn"
+                class="btn btn-sm btn-private btn-outline mb-2"
+              ></button>
+            </li>
+            <li>
+              <!-- Language Switcher -->
+              <button
+                onclick="toggleLanguage()"
+                id="langBtn"
+                class="btn btn-sm btn-private btn-outline"
+              ></button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title">
+        <div
+          class="container d-lg-flex justify-content-between align-items-center"
+        >
+          <h1 class="mb-2 mb-lg-0" data-i18n="portfolio_details_title">
+            Portfolio Details
+          </h1>
+
+          <!-- Breadcrumbs -->
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html" data-i18n="home">Home</a></li>
+              <li class="current" data-i18n="portfolio_details">
+                Portfolio Details
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/asek/asek-1.png"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/asek/asek-2.png"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/asek/asek-3.png"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/img/portfolio/asek/asek-4.png"
+                      alt="Portfolio Image"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="portfolio-info"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <h3 data-i18n="project_information">Project Information</h3>
+                <ul>
+                  <li>
+                    <strong data-i18n="category">Category</strong>:
+                    <span data-i18n="category_value">Others</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="client">Client</strong>:
+                    <span data-i18n="bps_simeulue">BPS Simeulue</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="project_date">Project date</strong>:
+                    <span data-i18n="project_date_value">2026</span>
+                  </li>
+                  <li>
+                    <strong data-i18n="project_url">Project URL</strong>:
+
+                    <span data-i18n="private">Private</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div
+                class="portfolio-description"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h2 data-i18n="project_overview">Project Overview</h2>
+                <p data-i18n="project_description">
+                  Asisten Perekap Kegiatan (ASEK) is an automated WhatsApp bot
+                  specifically engineered to streamline the performance
+                  reporting process (Capaian SKP) for Civil Servants (ASN).
+                  Built on the n8n automation infrastructure, the system
+                  intelligently parses user message captions using regular
+                  expressions to instantly extract activity dates, keywords, and
+                  descriptions. It seamlessly integrates with the Evolution API
+                  and Nextcloud to automatically download media, construct
+                  organized folders, upload operational evidence, and generate
+                  public sharing links, simultaneously logging all data into a
+                  Google Sheets database. This creates a ready-to-use,
+                  chronologically organized archive that completely eliminates
+                  manual file uploads and repetitive data entry, ensuring
+                  performance reporting is effortless and accurate.
+                </p>
+                <p data-i18n="key_challenges">Key Challenges Addressed</p>
+                <ul>
+                  <li>
+                    <strong data-i18n="key_challenges_1"
+                      >Rigorous SKP Reporting Requirements</strong
+                    >:
+                    <span data-i18n="key_challenges_1_description"
+                      >Civil Servants are required to submit periodic
+                      performance reports complete with activity dates,
+                      descriptions, and verifiable proof links (bukti dukung)—a
+                      tedious process to compile manually at the end of a cycle.
+                    </span>
+                  </li>
+                  <li>
+                    <strong data-i18n="key_challenges_2"
+                      >Impractical Real-Time Logging</strong
+                    >:
+                    <span data-i18n="key_challenges_2_description">
+                      Inputting activity details directly into official
+                      administrative applications immediately after task
+                      completion is often unfeasible due to time constraints and
+                      field responsibilities.
+                    </span>
+                  </li>
+                  <li>
+                    <strong data-i18n="key_challenges_3"
+                      >Tedious Manual Workarounds</strong
+                    >:
+                    <span data-i18n="key_challenges_3_description">
+                      Creating a personal backup tracker on spreadsheets
+                      requires a highly repetitive, multi-step process: manually
+                      creating cloud folders, uploading evidence, generating
+                      sharing links, and copy-pasting those links into the sheet
+                      one by one.
+                    </span>
+                  </li>
+                </ul>
+                <div class="features mt-4">
+                  <h3 data-i18n="core_features">Core Features & Solutions</h3>
+                  <div class="row gy-3">
+                    <div class="col-md-4">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                      >
+                        <i class="bi bi-send-check"></i>
+                        <h4 data-i18n="core_features_1">
+                          Instant WhatsApp-to-Sheet Logging
+                        </h4>
+                        <p data-i18n="core_features_1_description">
+                          ASEK eliminates the need for immediate data entry into
+                          official apps. Users can simply send activity photos
+                          and descriptions via a WhatsApp message from anywhere.
+                          The system’s parsing engine instantly extracts the
+                          exact dates and descriptions, logging them directly
+                          into a Google Sheets tracker structured specifically
+                          for SKP formats.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                      >
+                        <i class="bi bi-gear-wide-connected"></i>
+                        <h4 data-i18n="core_features_2">
+                          Automated Evidence Archiving & Link Generation
+                        </h4>
+                        <p data-i18n="core_features_2_description">
+                          To eliminate the tedious manual upload process, the
+                          bot automatically downloads sent media, organizes them
+                          into dynamically named Nextcloud folders, and
+                          instantly generates public sharing links. These
+                          evidence links are automatically inserted into the
+                          spreadsheet alongside the activity data in a single,
+                          seamless flow.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div
+                        class="feature-item"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                      >
+                        <i class="bi bi-clipboard2-check"></i>
+                        <h4 data-i18n="core_features_3">
+                          Ready-to-Submit SKP Database
+                        </h4>
+                        <p data-i18n="core_features_3_description">
+                          With all data and evidence links continuously recorded
+                          and structured chronologically in the background, the
+                          system acts as a fully prepared digital logbook. At
+                          the end of the reporting period, users can
+                          effortlessly copy the complete, formatted data to
+                          fulfill their Capaian SKP requirements in mere
+                          seconds.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <h4 data-i18n="technologies_used">Technologies Used</h4>
+              <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
+                  <div class="col">
+                    <div
+                      class="skills-category"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <div class="skills-animation">
+                        <div
+                          class="skill-item d-flex flex-wrap align-items-center"
+                        >
+                          <div class="hover-putih" data-name="n8n">
+                            <img
+                              src="assets/img/logo/n8n.png"
+                              alt="n8n"
+                              style="width: 50px"
+                              loading="lazy"
+                            />
+                          </div>
+
+                          <div class="hover-putih" data-name="Nextcloud">
+                            <img
+                              src="assets/img/logo/nextcloud.svg"
+                              alt="Nextcloud"
+                              style="width: 50px"
+                              loading="lazy"
+                            />
+                          </div>
+
+                          <div class="hover-putih" data-name="Evolution API">
+                            <img
+                              src="assets/img/logo/evo-api.svg"
+                              alt="Evolution API"
+                              style="width: 50px"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div class="hover-putih" data-name="Google Sheets">
+                            <img
+                              src="assets/img/logo/sheets.svg"
+                              alt="Google Sheets"
+                              style="width: 50px"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div class="hover-putih" data-name="WhatsApp">
+                            <i
+                              class="bi bi-whatsapp"
+                              style="font-size: 50px"
+                            ></i>
+                          </div>
+                          <div class="hover-putih" data-name="JavaScript">
+                            <img
+                              src="assets/img/logo/js.png"
+                              alt="JavaScript"
+                              style="width: 50px"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Frontend Skills -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Details Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative">
+      <div class="container">
+        <div class="copyright text-center"></div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <span data-i18n="designed_by">Designed by</span>
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>.
+          <span data-i18n="modified_by">Modified by</span> Zuhdi Ali Hisyam.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Translation Data -->
+    <script>
+      const translations = {
+        id: {
+          portfolio_details_title: "Detail Portofolio",
+          home: "Beranda",
+          back: "Kembali",
+          portfolio_details: "Detail Portofolio",
+          project_information: "Informasi Proyek",
+          category: "Kategori",
+          category_value: "Lainnya",
+          client: "Klien",
+          bps_simeulue: "BPS Simeulue",
+          project_date: "Tanggal Proyek",
+          project_date_value: "2026",
+          project_url: "URL Proyek",
+          under_maintenance: "inovasi1101.com",
+          private: "Pribadi",
+          project_overview: "Gambaran Proyek",
+          project_description:
+            "Asisten Perekap Kegiatan (ASEK) adalah bot WhatsApp otomatis yang dirancang khusus untuk merampingkan proses pelaporan Capaian Sasaran Kinerja Pegawai (SKP) bagi Aparatur Sipil Negara (ASN). Dibangun di atas infrastruktur n8n, sistem ini membedah takarir pesan pengguna menggunakan ekspresi reguler untuk mengekstrak tanggal, kata kunci, dan deskripsi kegiatan secara instan. ASEK terintegrasi dengan Evolution API dan Nextcloud untuk secara otomatis mengunduh media, membuat folder, mengunggah bukti dukung, dan menghasilkan tautan berbagi publik, sekaligus mencatat semuanya ke dalam database Google Sheets. Hal ini menciptakan arsip tersusun rapi secara kronologis yang menghilangkan beban unggah file dan entri data manual, memastikan pelaporan kinerja menjadi sangat mudah dan akurat.",
+
+          key_challenges: "Tantangan Utama yang Diatasi",
+          key_challenges_1: "Kewajiban Pelaporan SKP yang Kaku",
+          key_challenges_1_description:
+            "ASN dituntut untuk menyusun laporan Capaian SKP periodik yang mewajibkan detail tanggal kegiatan, deskripsi, dan tautan bukti dukung—sebuah proses yang sangat melelahkan jika baru dikumpulkan dan disusun pada akhir periode.",
+          key_challenges_2: "Ketidakpraktisan Input Langsung",
+          key_challenges_2_description:
+            "Mengisi laporan kegiatan secara langsung ke dalam aplikasi resmi sesaat setelah tugas selesai seringkali tidak memungkinkan karena keterbatasan waktu dan kesibukan operasional di lapangan.",
+          key_challenges_3: "Proses Manual yang Melelahkan",
+          key_challenges_3_description:
+            "Membuat rekapitulasi mandiri sebagai solusi alternatif menggunakan spreadsheet menuntut proses berulang yang panjang: membuat folder cloud manual, mengunggah bukti dukung, menyalin tautan berbagi, lalu menempelkannya ke dalam lembar kerja satu per satu.",
+
+          core_features: "Fitur Utama & Solusi",
+          core_features_1: "Pencatatan Instan via WhatsApp",
+          core_features_1_description:
+            "ASEK menghilangkan keharusan menginput data ke aplikasi resmi saat itu juga. Pengguna cukup mengirim foto kegiatan beserta keterangannya via pesan WhatsApp. Mesin pemroses teks akan mengekstrak tanggal serta deskripsi secara instan dan mencatatnya ke dalam tracker Google Sheets yang sudah disesuaikan dengan format SKP.",
+          core_features_2:
+            "Pengarsipan Bukti Dukung & Pembuatan Tautan Otomatis",
+          core_features_2_description:
+            "Untuk memangkas proses unggah file manual, bot secara otomatis mengunduh media yang dikirim, menyusunnya ke dalam folder Nextcloud dengan penamaan dinamis, dan membuat tautan berbagi publik. Tautan bukti dukung tersebut langsung disisipkan ke dalam spreadsheet bersamaan dengan data kegiatan.",
+          core_features_3: "Database SKP Siap Pakai",
+          core_features_3_description:
+            "Dengan seluruh data dan tautan bukti dukung yang secara terus-menerus tercatat secara kronologis di latar belakang, sistem ini bertindak sebagai buku log digital yang selalu matang. Pada akhir periode pelaporan, pengguna hanya perlu menyalin keseluruhan data yang sudah diformat rapi untuk menuntaskan laporan Capaian SKP dalam hitungan detik.",
+
+          technologies_used: "Teknologi yang Digunakan",
+          designed_by: "Dirancang oleh",
+          modified_by: "Dimodifikasi oleh",
+        },
+        en: {
+          portfolio_details_title: "Portfolio Details",
+          home: "Home",
+          back: "Back",
+          portfolio_details: "Portfolio Details",
+          project_information: "Project Information",
+          category: "Category",
+          category_value: "Others",
+          client: "Client",
+          bps_simeulue: "BPS Simeulue",
+          project_date: "Project date",
+          project_date_value: "2026",
+          project_url: "Project URL",
+          under_maintenance: "inovasi1101.com",
+          private: "Private",
+          project_overview: "Project Overview",
+          project_description:
+            "Asisten Perekap Kegiatan (ASEK) is an automated WhatsApp bot specifically engineered to streamline the performance reporting process (Capaian SKP) for Civil Servants (ASN). Built on the n8n automation infrastructure, the system intelligently parses user message captions using regular expressions to instantly extract activity dates, keywords, and descriptions. It seamlessly integrates with the Evolution API and Nextcloud to automatically download media, construct organized folders, upload operational evidence, and generate public sharing links, simultaneously logging all data into a Google Sheets database. This creates a ready-to-use, chronologically organized archive that completely eliminates manual file uploads and repetitive data entry, ensuring performance reporting is effortless and accurate.",
+
+          key_challenges: "Key Challenges Addressed",
+          key_challenges_1: "Rigorous SKP Reporting Requirements",
+          key_challenges_1_description:
+            "Civil Servants are required to submit periodic performance reports complete with activity dates, descriptions, and verifiable proof links (bukti dukung)—a tedious process to compile manually at the end of a cycle.",
+          key_challenges_2: "Impractical Real-Time Logging",
+          key_challenges_2_description:
+            "Inputting activity details directly into official administrative applications immediately after task completion is often unfeasible due to time constraints and field responsibilities.",
+          key_challenges_3: "Tedious Manual Workarounds",
+          key_challenges_3_description:
+            "Creating a personal backup tracker on spreadsheets requires a highly repetitive, multi-step process: manually creating cloud folders, uploading evidence, generating sharing links, and copy-pasting those links into the sheet one by one.",
+          core_features: "Core Features & Solutions",
+          core_features_1: "Instant WhatsApp-to-Sheet Logging",
+          core_features_1_description:
+            "ASEK eliminates the need for immediate data entry into official apps. Users can simply send activity photos and descriptions via a WhatsApp message from anywhere. The system’s parsing engine instantly extracts the exact dates and descriptions, logging them directly into a Google Sheets tracker structured specifically for SKP formats.",
+          core_features_2: "Automated Evidence Archiving & Link Generation",
+          core_features_2_description:
+            "To eliminate the tedious manual upload process, the bot automatically downloads sent media, organizes them into dynamically named Nextcloud folders, and instantly generates public sharing links. These evidence links are automatically inserted into the spreadsheet alongside the activity data in a single, seamless flow.",
+          core_features_3: "Ready-to-Submit SKP Database",
+          core_features_3_description:
+            "With all data and evidence links continuously recorded and structured chronologically in the background, the system acts as a fully prepared digital logbook. At the end of the reporting period, users can effortlessly copy the complete, formatted data to fulfill their Capaian SKP requirements in mere seconds.",
+
+          technologies_used: "Technologies Used",
+          designed_by: "Designed by",
+          modified_by: "Modified by",
+        },
+      };
+    </script>
+
+    <!-- Theme and Language Switcher -->
+    <script src="assets/js/switcher.js"></script>
+  </body>
+</html>
